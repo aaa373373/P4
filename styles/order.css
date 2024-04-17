@@ -1,0 +1,255 @@
+/*DEVELOPER: Awura Abena Adjei, IS117-004, Spring 2024  */
+
+@media (max-width: 800px) {
+  .images {
+    flex-direction: column;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+  padding: 15px;
+  border-color: #e1b0ac;
+  background-color: #e1b0ac;
+}
+
+a {
+  text-decoration-line: none;
+  font-family: "Playfair Display", serif;
+  font-size: large;
+  text-decoration-line: none;
+  font-weight: bold;
+  color: #213f99;
+}
+
+a:hover {
+  color: white;
+}
+
+/* body {
+  background-color: #f2d4d6;
+} */
+
+p {
+  color: #213f99;
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  font-style: normal;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+/* body {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.68),
+      rgba(0, 0, 0, 0.68)
+    ),
+    url("/images/order3.jpg") no-repeat center center / cover;
+} */
+
+ul {
+  font-size: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+
+.home_link {
+  grid-column: 5 / span 1;
+}
+
+/* nav {
+  background-color: #f4f4f4f4;
+  padding: 1rem;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  font-weight: lighter;
+}
+a:link {
+  color: black;
+}
+a:hover,
+a:focus {
+  color: darkgray;
+} */
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+label {
+  display: block;
+}
+
+.form_heading {
+  text-align: center;
+  padding: 0.5rem 0;
+  color: #213f99;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+}
+
+.form {
+  width: 500px;
+  padding-bottom: 5rem;
+  /* color: #213f99;
+  font-family: "Kalam", cursive; */
+}
+
+.container form {
+  padding: 1rem;
+  background: #f2d4d6;
+  width: 100%;
+  min-height: 35vh;
+  border-radius: 10px;
+
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+}
+
+.form_heading {
+  grid-column: 1 / span 4;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+}
+
+.category {
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+  color: #213f99;
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+}
+
+.dish_code {
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 1;
+  color: #213f99;
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+}
+
+.dish_name {
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 1;
+  color: #213f99;
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+}
+
+.dish_description {
+  grid-column: 1 / span 4;
+  grid-row: 5 / span 2;
+  color: #213f99;
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+}
+
+.dish_price {
+  grid-column: 1 / span 4;
+  grid-row: 7 / span 1;
+  color: #213f99;
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+}
+
+#controls {
+  grid-column: 1 / span 4;
+  grid-row: 8 / span 1;
+  justify-self: center;
+}
+
+.container form input,
+.container form select,
+.container textarea {
+  margin-top: 0.3rem;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+}
+
+.container form div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.container textarea {
+  height: 85%;
+}
+
+#controls button {
+  display: inline-block;
+  width: 80px;
+  padding: 0.5rem 0;
+  color: #213f99;
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+}
+
+#controls button:hover {
+  color: #fff;
+  background-color: #213f99;
+}
+
+/* footer {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+} */
+
+.create_logs {
+  display: none;
+}
+
+.create_logs.success {
+  display: block;
+  background: green;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.create_logs.fail {
+  display: block;
+  background: red;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+footer {
+  color: #213f99;
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  text-wrap: wrap;
+  text-align: center;
+}
