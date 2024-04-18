@@ -12,7 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles/order.css">
+  <link rel="stylesheet" href="styles/account.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
@@ -25,9 +25,9 @@
   <div class="container-fluid">
     <div class="row">
       <nav class="navbar navbar-expand-md
-      justify-content-start
-      bg-dark navbar-dark
-      col-12">
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
 
         <!-- Brand -->
         <a class="navbar-brand" href="#">TRANQUIL TASTES</a>
@@ -68,63 +68,84 @@
           </ul>
         </div>
       </nav>
-
-      <main>
-        <div class="container">
-          <div class="form">
-            <p class="create_logs"></p>
-            <form>
-              <h1 class="form_heading">Make An Order</h1>
-              <div class="category">
-                <label for="food_category">Category</label>
-                <select id="food_category">
-                  <option value="breakfast">Breakfast</option>
-                  <option value="lunch">Lunch</option>
-                  <option value="dinner">Dinner</option>
-                </select>
+      <div class="container">
+        <div class="row">
+          <form action="">
+            <div class="form-group">
+              <h1 class="form_heading">
+                <main>Make An Order</main>
+              </h1>
+              <label for="firstname">Category:</label><br>
+              <select id="food_category">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+              </select><br><br>
+              <label for="firstname">Dietary Preferences:</label><br>
+              <select id="dish_code">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten free">Gluten-free</option>
+              </select>
+            </div><br>
+            <div class="form-group">
+              <label for="lastname">Dish Name:</label>
+              <input type="text" class="form-control" id="lastname" placeholder="Enter dish name" name="dish name">
+            </div><br>
+            <div class="form-group">
+              <label for="lastname">Extras:</label>
+              <input type="text" class="form-control" id="dish_price" placeholder="Example: Toppings, side dishes?"
+                name="dish name">
+            </div><br>
+            <div class="form-group">
+              <label for="email">Dish description:</label>
+              <input type="email" class="form-control" id="email" placeholder="Describe how you want it to be served"
+                name="email">
+            </div><br>
+            <h2>Delivery/Pickup Options</h2>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="deliveryOption" id="delivery" value="delivery"
+                  checked>
+                <label class="form-check-label" for="delivery">
+                  Delivery
+                </label>
               </div>
-              <div class="dish_code">
-                <label for="dish_code">Dish code</label>
-                <input type="text" id="dish_code" minlength="3" maxlength="10" required />
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="deliveryOption" id="pickup" value="pickup">
+                <label class="form-check-label" for="pickup">
+                  Pickup
+                </label>
               </div>
-              <div class="dish_name">
-                <label for="dish_name">Dish name</label>
-                <input type="text" id="dish_name" required minlength="2" maxlength="255" />
-              </div>
-              <div class="dish_description">
-                <label for="dish_description">Dish description</label>
-                <textarea id="dish_description" minlength="10" maxlength="255"></textarea>
-              </div>
-              <div class="dish_price">
-                <label for="dish_price">Dish price</label>
-                <input type="number" id="dish_price" required minlength="4" maxlength="4" step="0.01" />
-              </div>
-              <div id="controls">
-                <button id="submit" type="submit">Submit</button>
-                <button id="reset" type="reset">Reset</button>
-              </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
 
-      </main>
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <br>
+        <button type="submit" class="btn btn-primary">Order</button>
+        <button type="submit" class="btn btn-primary">Reset</button>
+      </div>
     </div>
-
-
-    <!-- Javascript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-      </script>
-  </div>
-</body>
-   <!-- FOOTER -->
-      <footer class="footer page-footer font-small ">
-        <div class="container">
-          <div class="row">
-            <span class="text-muted">&copy; Awura Abena Antwiwaa Adjei, 2024 | <a href="terms.html">Terms Of Use</a> |
-              <a href="privacy.html">Privacy Statement</a> </span>
-          </div>
+    <footer class="footer page-footer font-small">
+      <div class="container">
+        <div class="row">
+          <span class="text-muted">&copy; Awura Abena Antwiwaa Adjei, 2024 | <a href="terms.html">Terms Of Use</a> |
+            <a href="privacy.html">Privacy Statement</a></span>
         </div>
-      </footer>
+      </div>
+    </footer>
+  </div>
 
+
+  <!-- Javascript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>
+  
 </html>
