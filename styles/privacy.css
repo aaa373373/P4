@@ -64,6 +64,10 @@ h3 {
   text-align: left;
 }
 
+footer a:hover {
+  color: #e1b0ac;
+}
+
 .footer p {
   color: #213f99;
   font-family: "Kalam", cursive;
