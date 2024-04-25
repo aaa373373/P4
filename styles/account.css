@@ -32,6 +32,10 @@ nav {
     background-color: #e1b0ac;
   }
 
+  .a {
+    text-decoration: underline;
+  }
+
   a {
     text-decoration-line: none;
     font-family: "Playfair Display", serif;
