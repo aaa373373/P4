@@ -24,18 +24,18 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <nav class="navbar navbar-expand-md
+      <nav class="navbar navbar-expand-md d-flex
       justify-content-start
-      bg-dark navbar-dark
+      bg-pink-300 navbar-blue-500
       col-12">
 
         <!-- Brand -->
-        <a class="navbar-brand" href="#">TRANQUIL TASTES</a>
+        <a class="inline-block col navbar-brand" href="#">TRANQUIL TASTES</a>
         <!-- Responsive Button for the smaller menu -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class=" col collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <!-- Links -->
             <li class="nav-item">
@@ -68,9 +68,10 @@
           </ul>
         </div>
       </nav>
-      <div class="container">
-        <div class="row">
-          <form action="">
+      <div class="container d-flex justify-content-center align-items-center"
+        style="height: 85vh; width: 50rem !important;">
+        <div class="col">
+          <form action="" class="col-23">
             <div class="form-group">
               <h1 class="form_heading">LOGIN</h1>
               <label for="firstname">Username:</label>
@@ -90,8 +91,8 @@
               <br>
               <p>Don't have an account? <a class="a" href="account.html">Signup</a></p>
             </div>
+            <div class="text-center"><button type="submit" class="col btn btn-primary">Submit</button></div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
 
         </div>
